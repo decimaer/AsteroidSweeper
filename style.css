@@ -75,8 +75,23 @@ main {
     background-color: var(--hudcolorfill);
 }
 
-.flagged {
-    font-family: "FontAwesome";
+
+.flagged::after {
+    font-family: Arial, Helvetica, sans-serif;
+    color: red;
+    content: "\2662";
+    font-size: 1.5em;
+}
+
+.hidden {
+    display: none;
+}
+
+button {
+    padding: 0.5em;
+    background-color: var(--hudcolorfill);
+    border: 1px dotted var(--hudcolor);
+    font-size: 1rem;
 }
 
 .star {
@@ -138,17 +153,6 @@ main {
     top: 0; left: 0;
     animation-name: crasheffect;
     animation-duration: 0.5s;
-}
-
-.hidden {
-    display: none;
-}
-
-button {
-    padding: 0.5em;
-    background-color: var(--hudcolorfill);
-    border: 1px dotted var(--hudcolor);
-    font-size: 1rem;
 }
 
 /* SLIDER STYLING */

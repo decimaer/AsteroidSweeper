@@ -2,7 +2,7 @@
 
 ## BUGS  
 [] startbkg is not expanding when grid overflows viewport  
-[] Difficult to read game over modal when overlays grid  
+[] Difficult to read game over modal when overlays grid, move above board?  
 [] When game is over, remove asteriod picture  
 
 ## FEATURES TO MAKE A COMPLETE GAME  
@@ -19,7 +19,9 @@
     [] responsive design  
     [] long press to mark square (maybe alreadu works?)  
 [] Be able to set a rectangular grid  
+[] Responsive grid: adapt grid to fit screen size and aspect ratio  
 [] Make code independant of DOM - use only for showing the visuals  
-
+[] new icon for marking asteroid in grid
+[] Sound effects, music
 
 

@@ -139,6 +139,7 @@ const showSquare = function (y, x) {
 function checkForMine(event) {
     //debugger;
     if (event.target.id == 'MineField') {return};
+    //if (event.target.)
     const y = parseCoord(event)[0];
     const x = parseCoord(event)[1];
     const value = mineField[y][x];
@@ -168,15 +169,11 @@ function markSquare(event) {
     const x = parseCoord(event)[1];
     const id = event.target.getAttribute('id'); 
     const state = stateOfSquare(event.target);
-    // const y = parseInt(id[0]), x = parseInt(id[1]); //HÄR
-    //const element = document.getElementById(`${y}-${x}`);
 
-    if (id == 'MineField' || state.includes('opensquare')) {
+    if (id == 'MineField' || state.includes('opensquare') || state.includes('flagged')) {
         return;
     } else {
         event.target.classList.add('flagged');
-        event.target.innerHTML = '<i class="fa-sharp fa-solid fa-diamond"></i>';
-
     }
 }
 
