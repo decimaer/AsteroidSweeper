@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Silkscreen">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Space Astroid</title>
+</head>
+<body>
+    <div id="startmodal" class="modal">
+        <h1>Warning! Entering an asteroid field!</h1>
+        <p>You need to find the astroids before they hit you! Clear a path for your spaceship.</p>
+        <p>Choose size:</p>
+        <input type="range" name="" id="SizeSlider" min="8" max="24" step="2" value="10" oninput="sliderValue(this)">
+        <p id="ShowSizeSetting">10</p>
+        <p>Choose difficulty:</p>
+        <input type="range" name="" id="DiffSlider" min="16" max="32" step="4" value="20" oninput="sliderValue(this)">
+        <p id="ShowDiffSetting">20</p>
+        <button id="BtnStartGame">Play!</button>
+    </div>
+    <div id="gameovermodal" class="modal hidden">
+        <h1>Game over!</h1>
+        <p>You got hit by an asteroid!</p>
+        <p>Restart game?</p>
+        <button id="BtnRestartGame">Restart Game</button>
+    </div>
+    <main>
+        <div id="gameboard">
+        </div>
+        <div id="starbkg"></div>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
